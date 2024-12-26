@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+    }
+    .card{
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+        transition: 0.3s;
+        padding: 30px 50px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .card:hover{
+       height: 300px;
+
+    }
+    .imgbox{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-70px);
+        z-index: 999;
+    }
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .content{
+        padding: 10px 20px;
+        text-align: center;
+        transform: translateY(-460px);
+        opacity: 0;
+        transition: 0.1s;
+        color: #fff;
+    }
+    .card:hover .content{
+        transform: translateY(-130px);
+        opacity: 1;
+        color: black;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="images\emily-bernal-v9vII5gV8Lw-unsplash.jpg" alt="">
+            <h2>Graphic Designer</h2>
+        </div>
+        <div class="content">
+            <!-- <h2>Graphic Designer</h2> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est numquam, non debitis praesentium ut commodi itaque error, molestias, aliquid nesciunt deserunt aliquam laudantium aut?</p>
+        </div>
+    </div>
+</body>
+</html>
