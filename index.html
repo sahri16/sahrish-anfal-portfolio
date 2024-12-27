@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/svg" href="images/favicon.svg">
-    <title>Sahrish Portfolio</title>
+    <title>Sahrish Anfal</title>
 </head>
 
 <body>
@@ -34,17 +34,21 @@
         </div>
     </div>
 
-    <div class="navbar">
-        <ul>
+    <nav class="navbar">
+        <ul id="menuList">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="Resume.html">Resume</a></li>
             <li><a href="services.html">Service</a></li>
             <li><a href="contect.html">Contect</a></li>
-            <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
-
         </ul>
-    </div>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg" alt=""></a>
+        </div>
+        <div class="menuicon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
       
     <div class="content-home">
         <div class="name-into">
@@ -58,5 +62,5 @@
     <footer></footer>
 </body>
 <script src="mutityper.js"></script>
-
+<script src="navbar.js"></script>
 </html>
