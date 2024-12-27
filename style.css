@@ -231,7 +231,7 @@ h4 span::after {
   }
   .navbar ul {
     position: absolute;
-    right: -410px;
+    right: -320px;
     flex-direction: column;
     text-align: center;
     gap: 0px;
@@ -267,7 +267,7 @@ h4 span::after {
     flex-direction: column;
     align-items: center;
     top: 600px;
-    
+
   }
 
   .name-into {
@@ -317,7 +317,7 @@ h4 span::after {
   }
 
   .navbar ul {
-    right: -270px;
+    right: -230px;
   }
   #menuList {
     width: 300px;
