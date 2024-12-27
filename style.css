@@ -128,7 +128,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
-.logo a img{
+.logo a img {
   height: 8vh;
   display: flex;
   align-items: center;
@@ -136,10 +136,10 @@ body {
   position: relative;
   left: 120px;
 }
-.menuicon{
+.menuicon {
   display: none;
 }
-.menuicon i{
+.menuicon i {
   font-size: 2rem;
 }
 .navbar ul li::after {
@@ -156,7 +156,6 @@ body {
 .navbar ul li .active {
   color: #ff6207;
   border-bottom: 2px solid #ff6207;
-  /* bottom: 4px; */
   position: relative;
 }
 
@@ -210,10 +209,8 @@ h4 span::after {
   height: 80vh;
 }
 
-
-
 /* Responsive Styles */
-@media (max-width:600px) {
+@media screen and (max-width: 600px) {
   .welcome h1 {
     font-size: 2.5em;
     width: 80vw;
@@ -232,34 +229,35 @@ h4 span::after {
   }
   .navbar ul {
     position: absolute;
-    right:-410px ;
+    right: -410px;
     flex-direction: column;
     text-align: center;
     gap: 0px;
-    background-color: rgb(2, 2, 14,0.7);
+    background-color: rgb(2, 2, 14, 0.7);
     border-radius: 10px;
     border: none;
     overflow: hidden;
   }
-  .navbar ul:hover, #menuList:hover {
+  .navbar ul:hover,
+  #menuList:hover {
     border: 2px solid rgba(212, 212, 212, 0.7); /* Add border when hovering */
     border-radius: 10px;
   }
-  .navbar ul li{
+  .navbar ul li {
     padding: 20px;
     text-align: center;
   }
-  .logo a img{
-   display: none;
+  .logo a img {
+    display: none;
   }
-  .menuicon{
+  .menuicon {
     display: block;
     position: fixed;
-    top: 50px;
+    top: 30px;
     left: 500px;
     z-index: 3;
   }
-  #menuList{
+  #menuList {
     position: absolute;
     transition: ease-in-out 0.8s;
     width: 380px;
@@ -270,7 +268,6 @@ h4 span::after {
   .content-home {
     flex-direction: column;
     align-items: center;
-    /* margin-top: 50px; */
     top: 600px;
   }
 
@@ -296,9 +293,21 @@ h4 span::after {
     width: 80vw;
     height: auto;
   }
+  .social-icon ul li {
+    height: 35px;
+    width: 30px;
+    padding-left: 8px;
+    padding-top: 5px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .fa-brands{
+    font-size: 1.3rem;
+    padding-top: 4px;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
   .welcome h1 {
     font-size: 2em;
     width: 90vw;
@@ -309,13 +318,13 @@ h4 span::after {
   }
 
   .navbar ul {
-    right:-310px ;
+    right: -270px;
   }
-  .menuicon{
-    left: 400px;
+  .menuicon {
+    left: 360px;
   }
-  #menuList{
-    width: 350px;
+  #menuList {
+    width: 300px;
   }
   .name-into {
     width: 90%;
@@ -336,4 +345,53 @@ h4 span::after {
   .sahrii_1img img {
     width: 90vw;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .welcome h1 {
+    font-size: 2em;
+    width: 90vw;
+  }
+  .welcome {
+    height: 25vh;
+    width: 35vw;
+  }
+  .social-icon {
+    width: 50px;
+  }
+
+  .navbar ul {
+    right: -166px;
+  }
+  #menuList {
+    width: 200px;
+  }
+  .menuicon {
+    left: 260px;
+  }
+  .name-into {
+    width: 90%;
+  }
+
+  .name-into h1 {
+    font-size: 1.5em;
+  }
+
+  .name-into h4 {
+    font-size: 1.1em;
+  }
+
+  .name-into p {
+    font-size: 1em;
+  }
+
+  .sahrii_1img img {
+    width: 90vw;
+  }
+  .content-home {
+    flex-direction: column;
+    align-items: center;
+    top: 650px;
+  }
+
 }
