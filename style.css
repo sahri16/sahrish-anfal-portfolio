@@ -110,7 +110,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: relative; */
   position: absolute;
   height: 10vh;
   font-size: 1.5rem;
@@ -140,7 +139,10 @@ body {
   display: none;
 }
 .menuicon i {
-  font-size: 2rem;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  font-size: 1.5rem;
 }
 .navbar ul li::after {
   content: "";
@@ -252,16 +254,12 @@ h4 span::after {
   }
   .menuicon {
     display: block;
-    position: fixed;
-    top: 30px;
-    left: 500px;
-    z-index: 3;
   }
   #menuList {
     position: absolute;
     transition: ease-in-out 0.8s;
     width: 380px;
-    top: -700px;
+    top: -730px;
     z-index: 1;
   }
 
@@ -269,6 +267,7 @@ h4 span::after {
     flex-direction: column;
     align-items: center;
     top: 600px;
+    
   }
 
   .name-into {
@@ -320,9 +319,6 @@ h4 span::after {
   .navbar ul {
     right: -270px;
   }
-  .menuicon {
-    left: 360px;
-  }
   #menuList {
     width: 300px;
   }
@@ -365,9 +361,6 @@ h4 span::after {
   }
   #menuList {
     width: 200px;
-  }
-  .menuicon {
-    left: 260px;
   }
   .name-into {
     width: 90%;
