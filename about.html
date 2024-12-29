@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css\all.min.css">
     <link rel="stylesheet" href="css\fontawesome.min.css">
     <link rel="stylesheet" href="about.css">
-   
+
     <link rel="icon" type="image/svg" href="images/favicon.svg">
     <title>Sahrish about</title>
 </head>
@@ -16,29 +16,35 @@
     <div class="headers">
         <div class="social-icon">
             <ul>
-                <li><a href="https://web.facebook.com/sahrish.reporter" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/sahrish-anfal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="https://web.facebook.com/sahrish.reporter" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sahrish-anfal/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.behance.net/sahrish_anfal" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="https://www.behance.net/sahrish_anfal" target="_blank"><i
+                            class="fa-brands fa-behance"></i></a></li>
                 <li><a href="https://github.com/sahri16" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             </ul>
         </div>
     </div>
 
-    <div class="navbar">
-        <ul>
+    <nav class="navbar">
+        <ul id="menuList">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="active">About</a></li>
-            <li><a href="Resume.html" >Resume</a></li>
+            <li><a href="Resume.html">Resume</a></li>
             <li><a href="services.html">Service</a></li>
             <li><a href="contect.html">Contect</a></li>
-            <div>
-                <h2><a href="index.html">Sahrish anfal</a></h2>
-            </div>
-            <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
         </ul>
-    </div>
+        <div>
+            <h2><a href="index.html">Sahrish anfal</a></h2>
+        </div>
+        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
+        <div class="menuicon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
 
     <div class="body">
         <div class="imagetext">
@@ -50,16 +56,15 @@
             </div>
         </div>
 
-
         <div class="secondAbout">
             <div class="aboutHeding">
               <h3>Web Developer or Designer</h3>
 
             </div>
             <div class="address1">
-                <img src="images\4 degree.png" alt="">
-                <img src="images\5 freelance.png" alt="" class="img2">
-                <img src="images\5 freelance.png" alt="">
+                <img src="images\1 whatsapp.png" alt="">
+                <img src="images\2 email.png" alt="" class="img2">
+                <img src="images\3 city.png" alt="">
 
             </div>
             <div class="address2">
@@ -68,6 +73,7 @@
             </div>
         </div>
 
+<!-- -----------------interest----------------- -->
         <div class="Resume1">
             <h6>interest</h6>
             <div class="line"></div>
@@ -87,7 +93,7 @@
             <div><span>Book Reading</span></div>
         </div>
     </div>
-    <div class="interest">
+    <div class="interest interest-padding">
         <div class="interestBox">
             <div><i class="fa-solid fa-plane-departure"></i></div>
             <div><span>Traveling</span></div>
@@ -105,5 +111,6 @@
     </div>
 
 </body>
+<script src="js file/navbar.js"></script>
 
 </html>
