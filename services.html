@@ -4,42 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="css\all.min.css">
     <link rel="stylesheet" href="css\fontawesome.min.css">
-    <link rel="stylesheet" href="services.css">
-  
+
     <link rel="icon" type="image/svg" href="images/favicon.svg">
-    <title>Sahrish Portfolio</title>
+    <title>Sahrish Resume</title>
 </head>
 
 <body>
     <div class="headers">
         <div class="social-icon">
             <ul>
-                <li><a href="https://web.facebook.com/sahrish.reporter" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/sahrish-anfal/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="https://web.facebook.com/sahrish.reporter" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sahrish-anfal/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.behance.net/sahrish_anfal" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="https://www.behance.net/sahrish_anfal" target="_blank"><i
+                            class="fa-brands fa-behance"></i></a></li>
                 <li><a href="https://github.com/sahri16" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             </ul>
         </div>
     </div>
 
-    <div class="navbar">
-        <ul>
+    <nav class="navbar">
+        <ul id="menuList">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="Resume.html">Resume</a></li>
             <li><a href="services.html" class="active">Service</a></li>
             <li><a href="contect.html">Contect</a></li>
-            <div>
-                <h2><a href="index.html">Sahrish anfal</a></h2>
-            </div>
-            <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
-
         </ul>
-    </div>
+        <div>
+            <h2><a href="index.html">Sahrish anfal</a></h2>
+        </div>
+        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt=""></a></div>
+        <div class="menuicon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
 
     <div class="body">
         <div class="Resume1">
@@ -86,5 +92,6 @@
     </div>
 
 </body>
+<script src="js file/navbar.js"></script>
 
 </html>

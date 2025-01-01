@@ -1,10 +1,16 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 body {
+  /* position: relative; */
   background-color: #02030e;
+  font-family: Arial, sans-serif;
+  min-height: 150vh;
   height: 230vh;
+  width: auto;
 }
 .body {
   position: relative;
@@ -15,15 +21,15 @@ body {
   height: 190vh;
   width: 85%;
 }
-
 .headers {
   transition: ease-in-out 0.82s;
   position: relative;
   height: 100vh;
+  /* height: auto; */
   display: flex;
   align-items: center;
   /* z-index: 997; */
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .social-icon {
   display: flex;
@@ -39,11 +45,12 @@ body {
   padding: initial;
 }
 .social-icon ul li {
+  display: flex;
+  justify-content: center;
   height: 40px;
   width: 40px;
   list-style-type: none;
-  padding-left: 12px;
-  padding-top: 8px;
+  padding-top: 4px;
   margin-top: 5px;
   color: #fff;
   background: rgb(65, 64, 64);
@@ -55,7 +62,6 @@ body {
   text-decoration: none;
 }
 .social-icon ul li:hover {
-  padding-left: 30px;
   width: 80px;
   transition: 1s;
   border-top-right-radius: 50px;
@@ -67,82 +73,89 @@ body {
   padding-top: 4px;
   padding-left: 2px;
 }
-.navbar {
-  position: absolute;
+nav {
+  padding: 10px 80px;
   display: flex;
-  top: 0px;
+  align-items: center;
+  justify-content: space-around;
+  top: 10px;
+  position: absolute;
   background-color: #0b0b11;
   width: 100%;
-  height: 15vh;
 }
-.navbar ul {
+
+nav ul {
   display: flex;
   list-style: none;
-  width: 50%;
-  margin-left: 50px;
-  /* background-color: #5757e4; */
+  gap: 50px;
   align-items: center;
 }
 
-.navbar ul li {
-  padding: 0% 2%;
-}
-.navbar ul li a {
+nav ul li a {
   text-decoration: none;
   font-family: sans-serif;
   color: #ffffff;
   font-size: 1.5rem;
-  padding: 5px 12px;
+}
+
+.menuicon {
+  display: none;
+  cursor: pointer;
+}
+
+.menuicon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  bottom: 0px;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .navbar ul li::after {
   content: "";
   width: 0%;
-  height: 2px;
-  background: #ff6207;
+  border-bottom: 2px solid #ff6207;
   display: block;
-  margin: auto;
+  margin-top: -1px;
   transition: 0.5s;
 }
-.navbar ul li:hover::after,
-.navbar ul li.active::after {
+
+.navbar ul li:hover::after {
   width: 100%;
 }
-.navbar ul li .active{
-  color: #ff6207;
-  border-bottom: 2px solid  #ff6207;
-  bottom: 4px;
-  position: relative;
 
+.navbar ul li .active {
+  color: #ff6207;
+  border-bottom: 2px solid #ff6207;
+  position: relative;
 }
+
 h2 {
   position: relative;
-  width: 59vh;
-  /* background-color: #0785b2; */
-  margin-left: 22vh;
+  margin-left: 30vh;
   font-size: 2.6em;
   font-family: sans-serif;
   text-transform: uppercase;
 }
+
 h2 a {
   color: #ff6207;
   text-decoration: none;
 }
+
 .logo img {
-  margin-left: 13px;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  height: 10vh;
-  color: #ff6207;
+  height: 8vh;
+  right: 20px;
 }
+
 .Resume1 {
-  /* background-color: #0785b2; */
-  width: 80%;
   height: 7vh;
   display: flex;
   align-items: center;
-  /* padding-top: 30px; */
 }
 .Resume1 h6 {
   margin-left: 20px;
@@ -158,28 +171,17 @@ h2 a {
   height: 0.1em;
   background-color: #ff6207;
 }
+
 .Resume2 {
   color: #fff;
   /* background-color: #0785b2; */
   width: 80%;
   height: 7vh;
+  margin-top: 15px;
   font: 2rem bolder;
   text-transform: uppercase;
   font-family: sans-serif;
   margin-left: 20px;
-}
-.Resume3 {
-  margin-left: 230px;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 60%;
-  height: 7vh;
-  /* background-color: rgb(16, 44, 68); */
-  font-size: 1.7rem;
-  font-family: sans-serif;
-  color: #fff;
 }
 .Resume4 {
   display: flex;
@@ -189,20 +191,32 @@ h2 a {
   /* background-color: #c25d5d; */
   margin-left: 60px;
   width: 90%;
-  height: 75vh;
+  height: 80vh;
 }
-.Resume41 {
+.edu-exp-hading {
+  margin: 30px 0px;
+  color: #fff;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.education-class,
+.experiance-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.card1,
+.card2 {
+  position: relative;
   background-color: #515151;
-  width: 45%;
+  width: 90%;
   height: 70vh;
   border-radius: 50px;
 }
-.Resume42 {
-  background-color: #515151;
-  width: 45%;
-  height: 70vh;
-  border-radius: 50px;
-}
+
 .Resume411 {
   display: flex;
   align-items: center;
@@ -217,7 +231,6 @@ h2 a {
   border-radius: 100px;
   color: #ff6207;
   font-size: 1.5rem;
-  /* border-style: dashed ; */
   border: none;
   outline: 2px dashed #ff6207;
 }
@@ -239,7 +252,7 @@ h2 a {
 }
 .Resume412 h6 {
   /* background-color: #be6e6e; */
-  width: 55%;
+  /* width: 55%; */
   height: 6vh;
   margin-left: 90px;
   font-family: sans-serif;
@@ -257,6 +270,8 @@ h2 a {
   line-height: 1.3;
   color: #ffffff;
 }
+
+/* ---------------------------skills------------------------- */
 .resume-skill1 {
   /* background-color: #0785b2; */
   display: flex;
@@ -271,6 +286,9 @@ h2 a {
   font: 1.6rem bolder;
   color: #fff;
 }
+.skillPand {
+  margin-top: 50px;
+}
 .skill {
   display: flex;
   align-items: center;
@@ -278,7 +296,6 @@ h2 a {
   padding-bottom: 3px;
   width: 102%;
 }
-
 .skills {
   font-family: sans-serif;
 }
@@ -373,19 +390,9 @@ h2 a {
   width: 80%;
   height: 2vh;
 }
-/* .skill-prec7{
-    background-color: #686161;
-    border-radius: 10px;
-    width: 94%;
-    height: 2.0vh;
-} */
 .skill6 {
   width: 89%;
 }
-/* .skill7{
-    width: 103%;
-    } */
-
 .Resume-dow {
   padding-top: 90px;
 }
@@ -396,7 +403,7 @@ h6 {
   font-family: sans-serif;
 }
 
-/* button */
+/* -----------------button----------------------- */
 
 .btnRes {
   display: flex;
@@ -406,12 +413,10 @@ h6 {
   font-size: 18px;
   font-weight: bold;
 }
-.btnRes a{
+.btnRes a {
   text-decoration: none;
-  /* background-color: #f0f0f0; */
 }
 .btn {
-  /* width: 28%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -424,7 +429,6 @@ h6 {
   overflow: hidden;
   position: relative;
   transition: background-color 0.4s ease, color 0.4s ease;
-  
 }
 
 .btn span.text {
@@ -441,7 +445,6 @@ h6 {
 
 .btn .fa-download {
   font-size: 20px;
-  /* right: -10px; */
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .fa-download {
@@ -477,4 +480,257 @@ h6 {
   font-size: 18px;
   opacity: 1;
   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* Mobile Devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 10px 40px;
+  }
+  nav ul {
+    position: absolute;
+    top: 90px;
+    gap: 0px;
+    /* right: -100%; */
+    left: 0;
+    right: 0;
+    margin-left: 110px;
+    flex-direction: column;
+    background-color: rgb(77 20 1 / 76%);
+    width: 100%;
+    text-align: center;
+    transition: right 0.5s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    /* z-index: 2; */
+    /* border: 2px solid rgba(212, 212, 212, 0.7); */
+
+  }
+
+  nav ul:hover,
+  #menuList:hover {
+    border: 2px solid rgba(212, 212, 212, 0.7);
+    border-radius: 10px;
+  }
+  nav ul li {
+    padding: 20px;
+    text-align: center;
+  }
+  .menuicon {
+    display: block;
+    right: 10px;
+  }
+  .menuicon i {
+    /* right: 60px;  */
+  }
+  #menuList {
+    position: absolute;
+    transition: ease-in-out 0.8s;
+    width: 330px;
+    z-index: 1;
+  }
+  .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 10px;
+    height: 5vh;
+  }
+  h2 {
+    margin-right: 10px;
+    font-size: 2rem;
+    margin-left: -30px;
+  }
+  .body {
+    top: -580px;
+    margin-left: 120px;
+    background-color: #02030e;
+    height: 220vh;
+    width: 55%;
+  }
+  .Resume1 {
+    height: 4vh;
+  }
+  .Resume1 h6 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  .line {
+    margin-left: 0px;
+  }
+  .Resume2 {
+    font: 1.1rem bolder;
+    font-family: sans-serif;
+    height: 1vh;
+    margin-left: 0px;
+  }
+  .Resume4 {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .card1,
+  .card2 {
+    width: 300%;
+    height: 35vh;
+    border-radius: 30px;
+  }
+  .Resume411 {
+    margin: -13px 15px;
+  }
+  .Resume411 i {
+    font-size: 1.2rem;
+  }
+  .size-degree i {
+    padding: 10px 8px;
+  }
+  .size-degree2 i {
+    padding: 10px 9px;
+  }
+  .Resume411 p {
+    font-size: 1rem;
+  }
+  .Resume412 {
+    justify-content: center;
+    align-items: center;
+  }
+  .Resume412 h6 {
+    height: 2vh;
+    margin-left: 0px;
+    font-size: 1.2rem;
+  }
+  .Resume413 p {
+    margin: 10px 20px;
+    width: 87%;
+    font-size: 0.6rem;
+  }
+  .secondBoXContent {
+    /* margin-top: -44px; */
+    margin-top: -34px;
+  }
+  .skillPand {
+    margin-top: 150px;
+  }
+  .resume-skill1 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .Resume6 {
+    width: 100%;
+    margin-left: 0px;
+    font: 1rem bolder;
+  }
+  .Resume7 {
+    width: 100%;
+    padding-right: 0px;
+    font: 1rem bolder;
+  }
+  .resume-skill2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .resume-skill3 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .resume-skill4 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+.Resume-dow h6{
+  font-size: 1rem;
+}
+  .btnRes{
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav ul {
+    margin-left: 70px;
+  }
+
+  #menuList {
+    width: 75%;
+  }
+  h2 {
+    margin-right: 50px;
+    font-size: 1.3rem;
+  }
+  .logo img {
+    right: 60px;
+  }
+  .body {
+    /* top: -600px; */
+     top: -470px;
+    margin-left: 90px;
+    height: 240vh;
+    width: 60%;
+  }
+  .Resume1 h6 {
+    font-size: 1rem;
+  }
+  .Resume2 {
+    font: 1rem bolder;
+    font-family: sans-serif;
+    height: 1vh;
+  }
+  .card1,
+  .card2 {
+    width: 290%;
+    height: 45vh;
+  }
+  .Resume411 {
+    margin: 3px 15px;
+  }
+  .Resume412 h6 {
+    margin: 10px 0px;
+    font-size: 1.2rem;
+  }
+  .Resume413 p {
+    margin: 5px 20px;
+    line-height: 1;
+  }
+  .secondBoXContent {
+    margin-top: -22px;
+  }
+  .skillPand {
+    margin-top: 300px;
+  }
+  .Resume-dow h6{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #menuList {
+    width: 75%;
+  }
+  h2 {
+    margin-right: 20px;
+    font-size: 1.1rem;
+  }
+  .menuicon i {
+    right: 15px;
+    /* top: 20px; */
+  }
+
+  .logo img {
+    right: 20px;
+    height: 5vh;
+  }
+  .body {
+    /* top: -570px; */
+    margin-left: 70px;
+    height: 230vh;
+  }
+  .Resume2 {
+    font: 0.8rem bolder;
+    font-family: sans-serif;
+  }
+  .secondBoXContent {
+    margin-top: -12px;
+  }
 }
