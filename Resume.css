@@ -483,7 +483,7 @@ h6 {
 }
 
 
-/* Mobile Devices (max-width: 600px) */
+/* Mobile Devices  */
 @media screen and (max-width: 600px) {
   nav {
     padding: 10px 40px;

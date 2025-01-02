@@ -219,10 +219,10 @@ h4 span::after {
     font-size: 2.5em;
     width: 80vw;
   }
-
+/* 
   .social-icon {
     width: 60px;
-  }
+  } */
 
   .navbar {
     z-index: 1;
@@ -237,7 +237,7 @@ h4 span::after {
     flex-direction: column;
     text-align: center;
     gap: 0px;
-    background-color: rgb(2, 2, 14, 0.7);
+    background-color: rgb(77 20 1 / 76%);
     border-radius: 10px;
     border: none;
     overflow: hidden;
@@ -294,18 +294,7 @@ h4 span::after {
     width: 80vw;
     height: auto;
   }
-  .social-icon ul li {
-    height: 35px;
-    width: 30px;
-    padding-left: 8px;
-    padding-top: 5px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
-  .fa-brands{
-    font-size: 1.3rem;
-    padding-top: 4px;
-  }
+  /* s */
 }
 
 @media screen and (max-width: 425px) {
@@ -314,9 +303,9 @@ h4 span::after {
     width: 90vw;
   }
 
-  .social-icon {
+  /* .social-icon {
     width: 50px;
-  }
+  } */
 
   .navbar ul {
     right: -230px;
@@ -354,9 +343,9 @@ h4 span::after {
     height: 25vh;
     width: 35vw;
   }
-  .social-icon {
+  /* .social-icon {
     width: 50px;
-  }
+  } */
 
   .navbar ul {
     right: -166px;
