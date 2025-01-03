@@ -323,7 +323,7 @@ padding-bottom: 70px;
     flex-direction: column;
     text-align: center;
     /* top: -470px; */
-    top: -570px;
+    top: -770px;
     width: 100%;
     margin: 0 auto;
   }
@@ -410,7 +410,7 @@ padding-bottom: 70px;
   }
   .menuicon i {
     right: 15px;
-    top: 20px;
+    top: 10px;
   }
 
   .logo img {
