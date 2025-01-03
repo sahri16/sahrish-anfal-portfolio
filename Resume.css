@@ -490,12 +490,13 @@ h6 {
   }
   nav ul {
     position: absolute;
-    top: 90px;
+    top:100px;
     gap: 0px;
-    /* right: -100%; */
     left: 0;
     right: 0;
-    margin-left: 110px;
+    /* margin-left: 110px; */
+    margin: -30px 80px;
+
     flex-direction: column;
     background-color: rgb(77 20 1 / 76%);
     width: 100%;
@@ -520,9 +521,6 @@ h6 {
   .menuicon {
     display: block;
     right: 10px;
-  }
-  .menuicon i {
-    /* right: 60px;  */
   }
   #menuList {
     position: absolute;

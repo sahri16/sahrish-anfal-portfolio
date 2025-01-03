@@ -219,11 +219,6 @@ h4 span::after {
     font-size: 2.5em;
     width: 80vw;
   }
-/* 
-  .social-icon {
-    width: 60px;
-  } */
-
   .navbar {
     z-index: 1;
     display: block;
@@ -233,7 +228,7 @@ h4 span::after {
   }
   .navbar ul {
     position: absolute;
-    right: -320px;
+    right: -290px;
     flex-direction: column;
     text-align: center;
     gap: 0px;
@@ -260,7 +255,7 @@ h4 span::after {
   #menuList {
     position: absolute;
     transition: ease-in-out 0.8s;
-    width: 380px;
+    width: 330px;
     top: -730px;
     z-index: 1;
   }
@@ -302,13 +297,8 @@ h4 span::after {
     font-size: 2em;
     width: 90vw;
   }
-
-  /* .social-icon {
-    width: 50px;
-  } */
-
   .navbar ul {
-    right: -230px;
+    right: -250px;
   }
   #menuList {
     width: 300px;

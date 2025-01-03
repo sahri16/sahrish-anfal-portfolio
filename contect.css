@@ -331,7 +331,7 @@ textarea {
   }
   nav ul {
     position: absolute;
-    top: 90px;
+    top: 100px;
     gap: 0px;
     left: 0;
     right: 0;
@@ -357,9 +357,6 @@ textarea {
   .menuicon {
     display: block;
     right: 10px;
-  }
-  .menuicon i {
-    /* right: 60px;  */
   }
   #menuList {
     position: absolute;
@@ -391,7 +388,7 @@ textarea {
     top: -580px;
     margin-left: 120px;
     background-color: #02030e;
-    height: 60vh;
+    /* height: 60vh; */
     width: 55%;
     margin: 20px 90px;
   }
